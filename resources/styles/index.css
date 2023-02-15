@@ -112,16 +112,19 @@ ul {
   background-color: white;
   margin-bottom: 20px;
   border: 1px black solid;
+  overflow-wrap: normal;
   
 }
 
 .herotwo .content {
   width: 80%;
   padding: 50px 0 0 30px;
+  overflow-wrap: normal;
 }
 
 .herotwo p {
   margin: 10px 0 20px;
+  overflow-wrap: normal;
 }
 
 
