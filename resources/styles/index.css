@@ -57,6 +57,7 @@ ul {
 
 .first-parallax {
   width: 100%;
+  height: auto;
   background-image: url('/resources/images/cityBackground.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -112,9 +113,8 @@ iframe {
 }
 
 .home-cards p {
-  padding: .75rem .75rem;
+  padding: .75rem 0;
   background-color: rgba(255,255,255,0.5);
-  /* border: #000 1px solid; */
 }
 
 .home-cards img {
@@ -264,7 +264,18 @@ iframe {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
+@media(max-width: 725px){
+  .showcase {
+    height: 400px;
+    padding: 75px 0;
+    margin: 0 0;
+  }
+  iframe{
+    width: 100%;
+    padding: 0 0;
+    margin: 0 0;
+  }
+}
 @media(max-width: 500px) {
   .home-cards {
     grid-template-columns: 1fr;
@@ -277,6 +288,7 @@ iframe {
   .links .links-inner ul {
     margin-bottom: 20px;
   }
+
 }
 
 @media(min-width: 2000px) {
