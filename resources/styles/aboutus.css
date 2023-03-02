@@ -1,0 +1,39 @@
+.about-us-full {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  overflow-wrap: normal;
+  background-color: rgba(255,255,255,.75);
+
+  
+}
+
+.about-us-full .content-full {
+  width: 80%;
+  padding: 50px 0 0 30px;
+  overflow-wrap: normal;
+  
+}
+
+.about-us-full p {
+  overflow-wrap: normal;
+  padding: 50px 0;
+}
+
+/* Background image for old shit */ 
+
+.content-above{
+  position: relative;
+  z-index: 10;
+}
+body::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: url('/resources/images/cityBackground.png') no-repeat center center/cover; 
+  opacity: 0.125;
+}
+
