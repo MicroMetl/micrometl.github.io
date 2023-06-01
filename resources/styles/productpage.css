@@ -1,0 +1,339 @@
+/* NEW SHIT */
+  .product-builder-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: repeat(3, auto); /* Three rows */
+    grid-gap: 10px; /* Gap between grid items */
+    /* height: 100vh; */
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .left-side {
+    grid-column: 1; /* Left side column */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-side {
+    grid-column: 2; /* Right side column */
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .flex-item {
+    border: 1px solid black; /* Add a border for visualization */
+    box-sizing: border-box; /* Include the border in the width calculation */
+    padding: 10px; /* Add some padding */
+  }
+  
+
+  /* Left SIDE */
+  .product-name {
+    grid-row: 1; /* First row */
+    border: none;
+
+  }
+  
+  .product-information {
+    grid-row: 2; /* Second row */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    border: none;
+  }
+
+  .product-image {
+    width: 100%;
+    position: relative;
+    border: none;
+  }
+  
+  .aspect-ratio-container {
+    padding-top: 100%; /* Set the padding to create a 1:1 aspect ratio */
+    position: relative;
+  }
+  
+  #model-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .product-image img {
+    width: 100%; /* Set the width of the image to 100% */
+    height: auto; /* Let the height adjust automatically based on the image's aspect ratio */
+  }
+
+  .product-quantity {
+    background-color: white;
+    height: 50px;
+  }
+  .product-quantity span{
+    color: #E56B00;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+.product-number,
+.product-quantity,
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.product-number {
+  flex-grow: 1;
+}
+
+.product-quantity {
+  flex-grow: 1;
+}
+
+.product-price {
+  flex-shrink: 0;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.quantity-btn {
+  padding: 5px;
+  border: none;
+  background: none;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 25px;
+}
+
+.quantity-btn:hover {
+  background-color: #E56B00;
+}
+
+.quantity-value {
+  margin: 0 10px;
+}
+
+
+
+.product-description {
+  background-color: white;
+  height: auto;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px; /* Add padding for better appearance */
+  
+}
+
+/* DELIVERABLE BUTTONS */
+
+.product-deliverables {
+  grid-row: 3; /* Third row */
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  gap: 5px;
+}
+
+.submittal-button,
+.install-button,
+.spec-sheet-button{
+  padding: 10px 20px;
+  min-width: 100px;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.3s ease, font-size 0.3s ease; /* Add transition for both background color and font size */
+  white-space: nowrap;
+}
+
+.submittal-button:hover,
+.install-button:hover,
+.spec-sheet-button:hover {
+  background-color: rgba(240, 123, 5, 0.8) ; /* Apply the desired background color on hover */
+  color: white;
+  font-size: 18px;
+}
+
+
+  
+
+
+/* RIGHT SIDE */
+
+.unit-search {
+  background-color: #F07B05;
+  color: white;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+
+/* CONFIGURATOR */
+.configurator-title{
+    background-color: #F07B05;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-bottom: none;
+  
+}
+.product-configurator {
+  flex-grow: 1; 
+  background-color: rgba(239, 239, 239, 0.952);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  padding: 10px 10px 0 0;
+  gap: 5px;
+}
+
+
+.checkbox-group {
+  flex: 0;
+  max-width: 80%;
+  width: 80%;
+}
+
+
+.checkbox label{
+  font-weight: bold;
+}
+
+
+.clear-button {
+  align-self: center;
+  margin: 10px;
+  padding: 20px;
+  border: none;
+  background: none;
+}
+
+.clear-button:hover{
+  background-color: #E56B00;
+  border-radius: 10px;
+}
+
+.group-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  border-bottom: 1px solid #F07B05;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.5); /* Adjust the scale value as needed */
+}
+
+.checkbox-description {
+  margin-left: 30px;
+}
+
+/* CONFIGURATOR END */
+
+
+/* BUTTONS BELOW CONFIGURATOR */
+
+.product-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 10px 0 0;
+  gap: 5px;
+}
+
+.add-to-quote-button,
+.create-new-quote-button {
+  padding: 10px 10px;
+  min-width: 100px;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, font-size 0.3s ease;
+  /* Add transition for both background color and font size */
+}
+
+.add-to-quote-button:hover,
+.create-new-quote-button:hover {
+  background-color: rgba(240, 123, 5, 0.8);
+  /* Apply the desired background color on hover */
+  font-size: larger;
+  color: white;
+}
+
+/* VIDEO CONTAINER */
+
+
+.product-videos-container {
+  background-color: rgba(0, 0, 0, 0.164);
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the videos horizontally */
+  align-items: center; /* Center the videos vertically */
+  min-height: 200px;
+  text-align: center;
+}
+
+
+
+
+/* SUGGESTED SALES */
+.suggested-sales {
+  background-color: rgb(240, 179, 179);
+  min-height: 200px;
+  width: 100%;
+}
+
+.suggested-sales h1 {
+  margin: 0;
+  padding: 10px 0 0 10px;
+}
+
+.suggested-sales p {
+  padding: 0 0 0 10px;
+}
+
+.suggested-sales-products {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.card {
+  width: 30%;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+

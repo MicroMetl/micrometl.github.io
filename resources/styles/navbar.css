@@ -1,0 +1,467 @@
+/* NAVIGATION BAR */
+
+/* DESKTOP NAV */
+
+/* TOP Nav */
+
+
+.mobile-navbar{
+  display: none;
+}
+
+
+
+
+.nav-container {
+  color: black;
+  z-index: 5;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  color: black;
+  padding: 5px 0 5px 0;
+}
+
+.logo {
+  display: block;
+  max-width: 150px; /* Adjust the value as needed */
+  height: auto;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+  border-left: 2px solid orange;
+  padding-left: 10px;
+}
+
+.shopping-cart {
+  /* Styles for the shopping cart section */
+  color: black;
+  padding: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+
+/* BOTTOM NAV */
+/* .nav-bottom {
+    background-color: #F07B05;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    border: 1px black solid;
+  }
+  
+  .dropdown-menu-left,
+  .dropdown-menu-right {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-button-left,
+  .dropdown-button-right {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+.dropdown-button-left:hover,
+.dropdown-button-right:hover {
+  background-color: #E56B00;
+  border-radius: 5px;
+}
+  
+  .dropdown-list-left,
+  .dropdown-list-right {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    display: none;
+  }
+  
+  .dropdown-list-left li,
+  .dropdown-list-right li {
+    margin-bottom: 5px;
+    padding: 10px;
+  }
+  
+  .dropdown-list-left li:last-child,
+  .dropdown-list-right li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .dropdown-list-left a,
+  .dropdown-list-right a {
+    color: black;
+    text-decoration: none;
+  }
+  .dropdown-button-left i,
+  .dropdown-button-right i {
+    margin-left: 5px;
+    padding: 10px;
+  }
+  
+  .dropdown-list-left.show,
+  .dropdown-list-right.show {
+    display: block;
+    padding: 20px;
+    border: 2px black solid;
+  } */
+
+/* TEST START */
+.nav-bottom {
+  background-color: #f07b05;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  border: 1px solid black;
+}
+
+.dropdown-menu-left,
+.dropdown-menu-right {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button-left,
+.dropdown-button-right {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.dropdown-button-left:hover,
+.dropdown-button-right:hover {
+  background-color: #e56b00;
+  border-radius: 5px;
+}
+
+.dropdown-list-left,
+.dropdown-list-right {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 50vh; /* Set width to 100% */
+  height: 50vh; /* Set height to 100% of viewport height */
+  background-color: #f07b05;
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  display: none;
+  overflow-y: auto;
+}
+
+.dropdown-list-left.show,
+.dropdown-list-right.show {
+  display: block;
+  padding: 20px;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+}
+/* TEST END   */
+
+/* ------------------------------------------------------------------------------------------ */
+
+/* SEARCHBAR */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* Add this line */
+}
+
+.search-bar form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Add this line */
+  margin: 0 auto; /* Add this line */
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-bar button[type="submit"] {
+  padding: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.495);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+/* --------------------------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------------------------- */
+
+/* MOBILE NAV */
+
+/* Bread Crumbs */
+.breadcrumbs {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+.current-page {
+  font-weight: bold;
+}
+
+/* Styles for tablets and small desktops */
+@media only screen and (max-width: 960px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    max-width: 50px;
+    height: auto;
+  }
+  .breadcrumbs {
+    display: none;
+  }
+  .mobile-navbar{
+    display: block;
+    margin-bottom: 100px;
+  }
+  #mobile-navbar {
+    background-color: #F07B05;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    font-size: 1.5rem; /* Increase the font size to make the logo bigger */
+    cursor: pointer;
+  }
+  
+  #mobile-navbar .logo {
+    font-size: 1.5em;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  #mobile-navbar .logo:hover {
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  #mobile-search-bar {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  
+  #mobile-search-bar form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #mobile-search-bar input[type="text"] {
+    padding: 5px;
+    width: 80%;
+    border-radius: 5px;
+    height: 30px;
+  }
+  
+  #mobile-search-bar button {
+    font-size: 1.5rem;
+    color: #F07B05;
+    background: white;
+    border: none;
+    padding: 8px;
+    margin-left: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add box-shadow property for drop shadow effect */
+  }
+  
+  #mobile-search-bar button:hover {
+    background: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* #search-bar.expanded input[type="text"] {
+    padding: 10px;
+    height: 40px; 
+  } */
+  
+  #mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: -300%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease;
+  }
+  
+  #mobile-sidebar.open {
+    left: 0;
+  }
+  
+  #mobile-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  
+  #mobile-sidebar.open #mobile-close-btn {
+    display: block;
+    top: 0;
+  }
+  
+  #mobile-sidebar #mobile-sidebar-content {
+    margin-top: 70px;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  #mobile-sidebar #mobile-sidebar-content #mobile-search-bar {
+    margin-top: 40px; /* Adjust the top margin to provide space for the close button */
+  }
+  
+  /* .accordion-button {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 20px;
+  } */
+  
+  .mobile-accordion {
+    margin-top: 50px;
+  }
+  
+  .mobile-accordion .page-links ul {
+    list-style-type: none;
+  }
+  
+  .mobile-accordion-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 20px;
+    font-weight: bold;
+  }
+  
+  .mobile-accordion-button .mobile-menu-icon {
+    margin-left: auto;
+  }
+  
+  .mobile-menu-icon i {
+    margin-left: 5px;
+    transition: transform 0.3s ease; /* Add CSS transition for the transform property */
+  }
+  
+  .mobile-accordion-button.open .menu-icon i {
+    transform: rotate(90deg);
+  }
+  
+  .mobile-menu-icon i.rotate {
+    transform: rotate(90deg);
+  }
+  
+  .mobile-accordion-button:hover {
+    background-color: #F07B05;
+  }
+  
+  .mobile-accordion-content {
+    display: none;
+    padding-left: 20px;
+  }
+  
+  .mobile-accordion-item.open .mobile-accordion-content {
+    display: block;
+  }
+  
+  #mobile-bottom-menu {
+    margin-top: 20px;
+  }
+  
+  #mobile-account p {
+    margin-bottom: 10px;
+  }
+  
+  #mobile-account ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+}
+
+/* Styles for tablets and small desktops */
+@media only screen and (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  
+}
