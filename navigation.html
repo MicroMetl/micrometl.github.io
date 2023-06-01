@@ -1,0 +1,128 @@
+<nav class="navbar">
+    <div class="desktop-nav">
+
+    <!-- Nav Top -->
+      <div class="nav-top">
+        <div class="logo">
+            <a href="/index.html">
+          <img id="logo-image" class="logo" src="/resources/images/logos/Micrometl_full.png" alt="">
+        </a>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about-us.html">About Us</a></li>
+            <li><a href="./product-categories.html">Products</a></li>
+            <!-- <li><a href="#">Contact</a></li>
+            <li><a href="#">Literature</a></li> -->
+          </ul>
+        </div>
+        <div class="user-section">
+          <div class="username">
+            <!-- Username content goes here -->
+            <h1>John Doe</h1>
+          </div>
+          <div class="shopping-cart">
+            <i class="fas fa-shopping-cart fa-lg"></i>
+            <!-- Shopping cart content goes here -->
+          </div>
+        </div>
+      </div>
+
+      <!--Nav Bottom -->
+
+      <div class="nav-bottom">
+        <div class="dropdown-menu-left">
+            <button class="dropdown-button-left">All Products <i class="fas fa-chevron-down"></i></button>
+            <ul class="dropdown-list-left">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <form action="">
+            <input type="text" placeholder="Search...">
+            <button type="submit"><i class="fas fa-search fa-"></i></button>
+            </form>
+        </div>
+        <div class="dropdown-menu-right">
+            <button class="dropdown-button-right">Stock Orders <i class="fas fa-chevron-down"></i></button>
+            <ul class="dropdown-list-right">
+            <li><a href="#">Option A</a></li>
+            <li><a href="#">Option B</a></li>
+            <li><a href="#">Option C</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumbs">
+        <a href="#">Home</a>
+      </div>
+  </nav>
+
+<div class="mobile-navbar">
+  <div id="mobile-navbar">
+    <div class="mobile-logo" onclick="openMenu()"><i class="fas fa-bars"></i></div>
+    <div id="mobile-search-bar" class="mobile-expanded">
+      <form>
+        <input type="text" placeholder="Search...">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+  <div id="mobile-sidebar">
+    <button id="mobile-close-btn" onclick="closeMenu()">X</button>
+    <div id="mobile-sidebar-content">
+      <div id="mobile-sidebar-search-bar"></div> <!-- Add the sidebar-search-bar element -->
+      <div class="mobile-accordion">
+        <div class="mobile-page-links">
+          <h1>Page Links</h1>
+          <ul>
+            <li>aa</li>
+            <li>asdsdfasdf</li>
+            <li>asdfasdf</li>
+          </ul>
+        </div>
+        <div class="mobile-accordion-item">
+          <button class="mobile-accordion-button">
+            <span class="mobile-menu-title">Menu 1</span>
+            <span class="mobile-menu-icon"><i class="fas fa-caret-down"></i></span> <!-- Add the carrot icon here -->
+          </button>
+          <div class="mobile-accordion-content">
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-accordion-item">
+          <button class="mobile-accordion-button">
+            <span class="mobile-menu-title">Menu 1</span>
+            <span class="mobile-menu-icon"><i class="fas fa-caret-down"></i></span> <!-- Add the carrot icon here -->
+          </button>
+          <div class="mobile-accordion-content">
+            <ul>
+              <li><a href="#">Link 1</a></li>
+              <li><a href="#">Link 2</a></li>
+              <li><a href="#">Link 3</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-bottom-menu">
+        <a href="shopping-cart.html"><i class="fas fa-shopping-cart"></i> Shopping Cart</a>
+        <div id="mobile-account">
+          <p>Username</p>
+          <ul>
+            <li><a href="settings.html">Account Settings</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>

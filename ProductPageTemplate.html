@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LOCAL STYLES -->
+    <link rel="stylesheet" href="/resources/styles/default.css">
+    <link rel="stylesheet" href="/resources/styles/navbar.css">
+    <link rel="stylesheet" href="/resources/styles/productpage.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>MicroMetl</title>
+
+
+    <!-- THREE TEST -->
+
+          <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+          <script type="importmap">
+          {
+          "imports": {
+          "three": "https://unpkg.com/three@0.152.2/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.152.2/examples/jsm/"
+          }
+          }
+          </script>
+</head>
+<body>
+    <div class="grid-container whole-container">
+
+
+      <!-- Navigation -->
+        <header class="nav-container grid-item">
+          <div id="navigation"></div>
+            </header>
+
+            <!-- Navigation end -->
+
+        <!-- PAGE Content -->
+        <main class="grid-item">
+
+            <div class="product-builder-grid-container">
+
+                <div class="left-side">
+                    <!-- Product Name -->
+                  <div class="flex-item product-name"><h2>Product Group: MICROMETL LOW LEAK ECONOMIZERS</h2></div>
+
+                    <!-- Product image and info -->
+                  <div class="flex-item product-information">
+                    <div class="product-image">
+                      <div class="aspect-ratio-container">
+                        <div id="model-container"></div>
+                      </div>
+                    </div>
+                        <div class="product-quantity">
+                            <div class="product-number" id="product-number">MB-GP15CA-D2EH</div>
+                            <div class="product-quantity">
+                              <button class="quantity-btn minus-btn">-</button>
+                              <span class="quantity-value" id="quantity-value">1</span>
+                              <button class="quantity-btn plus-btn">+</button>
+                            </div>
+                            <div class="product-price" id="product-price">$1239.00</div>
+                        </div>
+                        <div class="product-description">
+                            <p id="product-weight" class="product-weight">Actual Weight: 59lbs, 26.76kg</p>
+                            <p>Mixing Box - CUBE - 1500 CFM Nominal, Ultra Low Leak
+                              Fault Detection & Diagnostic Controls - Honeywell Jade
+                              W7220 Controller, Enthalpy Sensor, Honeywell Actua
+                              tor, Galvanized Metal With Gears Comprised of Polybu
+                              tylene Terephthalate (PBT) Flame Retardant 30% Glass
+                              Filled , Barometric Relief NOT Included. Field Fabrica
+                              tion of a Transition May Be Required.</p>
+                        </div>
+                    </div>
+
+                    <!-- Product Deliverable -->
+                    <div class="flex-item product-deliverables">
+
+                        <button class="submittal-button">SUBMITTAL</button>
+
+                        <button class="install-button">INSTALL</button>
+
+                        <button class="spec-sheet-button">SPEC SHEET</button>
+
+                    </div>
+
+
+
+                </div>
+              <!-- RIGHT SIDE -->
+                <div class="right-side">
+                    <div class="flex-item unit-search">
+                      UNIT SEARCH <i class="fas fa-caret-down"></i>
+                    </div>
+
+                    <!-- CONFIGURATOR -->
+                    <div class="flex-item configurator-title">
+                      CONFIGURATOR
+                    </div>
+                    <div class="flex-item product-configurator">
+                      
+                      <!-- GROUP 1 -->
+                      <div class="checkbox-group">
+                          <h2 class="group-title">Compliance</h2>
+                          <div class="divider"></div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox1">
+                            <label for="checkbox1">Genesis Ultra Low Leak w/ Smoke Detector</label>
+                            <span class="checkbox-description">Checkbox 1 description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox2">
+                            <label for="checkbox2">Genesis Ultra Low Leak</label>
+                            <span class="checkbox-description">Checkbox 2 description</span>
+                          </div>
+                        </div>
+
+                      <!-- GROUP 2 -->
+                        <div class="checkbox-group">
+                          <h2 class="group-title">ORIENTATION</h2>
+                          <div class="divider"></div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox3">
+                            <label for="checkbox3">Horizontal</label>
+                            <span class="checkbox-description">Checkbox 3 description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox4">
+                            <label for="checkbox4">Vertical</label>
+                            <span class="checkbox-description">Checkbox 4 description</span>
+                          </div>
+                        </div>
+
+                        <!-- GROUP 3 -->
+                        <div class="checkbox-group">
+                          <h2 class="group-title">CONTROLLER</h2>
+                          <div class="divider"></div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox5">
+                            <label for="checkbox5">Actuator Only for 3rd Party Economizers - (No controller)</label>
+                            <span class="checkbox-description">Checkbox  description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox6">
+                            <label for="checkbox6">Actuator Only for Honeywell S-BUS Controls - (No controller)</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox7">
+                            <label for="checkbox7">Comfortlink - (No Controller)</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox8">
+                            <label for="checkbox8">Siemens POL224</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox9">
+                            <label for="checkbox9">Premier Link - (No Controller)</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox10">
+                            <label for="checkbox10">Honeywell Jade W7220</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                        </div>
+
+                        <!-- GROUP 4 -->
+                        <div class="checkbox-group">
+                          <h2 class="group-title">SENSORS</h2>
+                          <div class="divider"></div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox11">
+                            <label for="checkbox11">Adjustable Dry Bulb Sensor</label>
+                            <span class="checkbox-description">Checkbox  description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox12">
+                            <label for="checkbox12">Enthalpy Sensor</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                        </div>
+
+                        <!-- GROUP 5-->
+                        <div class="checkbox-group">
+                          <h2 class="group-title">ACTUATOR</h2>
+                          <div class="divider"></div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox13">
+                            <label for="checkbox13">Belimo</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox14">
+                            <label for="checkbox14">Honeywell</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                          <div class="checkbox">
+                            <input type="checkbox" id="checkbox15">
+                            <label for="checkbox15">Siemens</label>
+                            <span class="checkbox-description">Checkbox description</span>
+                          </div>
+                        </div>
+
+                        <button class="clear-button">Clear All</button>
+                      </div>
+                    
+                    <div class="flex-item product-actions">
+                        
+                        <button class="add-to-quote-button">Add to Quote</button>
+
+                        <button class="create-new-quote-button">Create New Quote</button>
+                    </div>
+                </div>
+              </div>
+
+              <!-- Content below -->
+              
+              <!-- VIDEOS -->
+              <div class="product-videos-container">
+                <h1>VIDEO CONTAINER</h1>
+              </div>
+
+
+              <!-- SUGGESTED SALES -->
+              <div class="suggested-sales">
+                <div class="suggested-sales-title">
+                  <h1>Suggested Sales</h1>
+                  <p>People who purchased this also purchased...</p>
+                </div>
+                <div class="suggested-sales-products">
+                  <div class="card">
+                    <a href="#">
+                      <img src="path/to/product1.jpg" alt="Product 1">
+                    </a>
+                  </div>
+                  <div class="card">
+                    <a href="#">
+                      <img src="path/to/product2.jpg" alt="Product 2">
+                    </a>
+                  </div>
+                  <div class="card">
+                    <a href="#">
+                      <img src="path/to/product3.jpg" alt="Product 3">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+
+        </main>
+        <!-- Page Content End -->
+
+        <!-- Footer -->
+        <footer class="grid-item">Footer</footer>
+        <!-- Footer end -->
+      </div>
+
+
+      
+
+      <script src="/resources/scripts/nav.js"></script>
+      <script type="module" src="/resources/scripts/productModel.js"></script>
+</body>
+
+
+
+
+</html>
