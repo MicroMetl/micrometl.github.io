@@ -337,3 +337,29 @@
 }
 
 
+
+
+@media screen and (max-width: 960px) {
+  .product-builder-grid-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: repeat(6, auto); /* Six rows */
+    grid-gap: 10px; /* Gap between grid items */
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .left-side {
+    grid-row: 1 / span 3; /* First three rows */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-side {
+    grid-row: 4 / span 3; /* Last three rows */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-column: 1; /* Span the full width */
+  }
+}

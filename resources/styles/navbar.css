@@ -259,7 +259,7 @@
 }
 
 /* Styles for tablets and small desktops */
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 959px) {
   html, body {
     margin: 0;
     padding: 0;
@@ -271,6 +271,7 @@
   .breadcrumbs {
     display: none;
   }
+  
   .mobile-navbar{
     display: block;
     margin-bottom: 100px;
@@ -384,20 +385,16 @@
     margin-top: 40px; /* Adjust the top margin to provide space for the close button */
   }
   
-  /* .accordion-button {
-    display: block;
-    width: 100%;
-    background: none;
-    border: none;
-    text-align: left;
-    cursor: pointer;
-    padding: 20px;
-  } */
+
   
   .mobile-accordion {
     margin-top: 50px;
   }
-  
+  .mobile-page-links ul{
+    text-decoration: none;
+    font-size: 2rem;
+    list-style-type: none;
+  }
   .mobile-accordion .page-links ul {
     list-style-type: none;
   }

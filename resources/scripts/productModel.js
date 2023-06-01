@@ -15,8 +15,8 @@ const scene = new THREE.Scene();
 
 // Create a camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.z = 400;
-camera.position.y = 400;
+camera.position.z = 150;
+camera.position.y = 150;
 
 
 // Create a renderer
@@ -76,7 +76,7 @@ loader.load('/resources/fbx/EconomizerV3.obj', function (obj) {
       container.removeChild(progressBar);
 
   // Scale down the economizer
-  const scale = 0.5; // Adjust the scale factor as needed
+  const scale = 2; // Adjust the scale factor as needed
   economizer.scale.set(scale, scale, scale);
 
   // Create a metallic material
