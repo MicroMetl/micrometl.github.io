@@ -1,0 +1,231 @@
+/* General styles */
+.AU-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow-x: auto;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.AU-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Top row styles */
+.AU-container h1 {
+  color: #F07B05;
+  margin-bottom: 10px;
+}
+
+/* Location row styles */
+.AU-locations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.AU-card {
+  flex: 1 0 calc(33.33% - 20px);
+  box-sizing: border-box;
+  min-height: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.AU-card:hover {
+  transform: scale(1.05);
+}
+
+/* Executives row styles */
+.AU-executives {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AU-card-circle {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid #F07B05;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.AU-card-circle:hover {
+  transform: scale(1.05);
+}
+
+/* Call to action row styles */
+.AU-call-to-action {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  background-image: url('background-photo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.AU-cta {
+  margin-bottom: 20px;
+}
+
+.AU-contact-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #F07B05;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.AU-contact-btn:hover {
+  background-color: #e65d00;
+}
+
+/* Timeline row styles */
+.timeline-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 30px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.timeline-item {
+  flex-shrink: 0;
+  width: 200px;
+  padding: 20px;
+  background-color: #F07B05;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.year {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.timeline-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 952px) {
+  .AU-container {
+    width: 100%;
+    max-width: 952px;
+    overflow-x: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* Timeline items */
+  .timeline-item {
+    width: 100%; /* Make timeline items take the full width */
+    padding: 10px;
+  }
+  
+  /* AU cards */
+  .AU-card {
+    flex: 1 0 100%; /* Card will take full width */
+    margin: 10px 0; /* Only vertical margin */
+  }
+
+  /* Executives row */
+  .AU-executives {
+    flex-direction: column; /* Arrange the cards vertically */
+    align-items: center;
+  }
+
+  /* AU card circle */
+  .AU-card-circle {
+    width: 250px; /* Reduce the size of the circle cards */
+    height: 250px;
+    margin-bottom: 20px;
+  }
+
+  /* Call to action row */
+  .AU-cta {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .AU-contact-btn {
+    padding: 8px 16px; /* Reduce padding */
+    font-size: 14px; /* Reduce font size */
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  /* Timeline items */
+  .timeline-item {
+    width: 100%; /* Make timeline items take the full width */
+    padding: 10px;
+  }
+  
+  /* AU cards */
+  .AU-card {
+    flex: 1 0 100%; /* Card will take full width */
+    margin: 10px 0; /* Only vertical margin */
+    padding: 15px; /* Reduce padding */
+    min-height: 250px; /* Reduce minimum height */
+  }
+
+  /* Executives row */
+  .AU-executives {
+    flex-direction: column; /* Arrange the cards vertically */
+    align-items: center;
+  }
+
+  /* AU card circle */
+  .AU-card-circle {
+    width: 200px; /* Reduce the size of the circle cards */
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  /* Call to action row */
+  .AU-cta {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .AU-contact-btn {
+    padding: 6px 12px; /* Reduce padding */
+    font-size: 12px; /* Reduce font size */
+  }
+  
+  /* Container padding */
+  .AU-container {
+    padding: 10px;
+  }
+}
